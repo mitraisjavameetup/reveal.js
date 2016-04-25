@@ -37,71 +37,49 @@ $heading2Size: 1.6em;
 $heading3Size: 1.3em;
 $heading4Size: 1.0em;
 
-section.has-light-background {
-	&, h1, h2, h3, h4, h5, h6 {
-		color: #222;
-	}
-}
-.main .slides{
-	background: transparent;
-}
-
-.main .slides .footer{
-	display: none;
-}
-
-.main body {
-	@include bodyBackground();
-	background-color: #6200C0;
-}
-
-.main .reveal {
-	font-family: $mainFont;
-	font-size: $mainFontSize;
-	font-weight: normal;
-	color: #fff;
-}
-.main .reveal h1,
-.main .reveal h2,
-.main .reveal h3,
-.main .reveal h4,
-.main .reveal h5,
-.main .reveal h6 {
-	margin: $headingMargin;
-	color: #fff;
-
-	font-family: $headingFont;
-	font-weight: $headingFontWeight;
-	line-height: $headingLineHeight;
-	letter-spacing: $headingLetterSpacing;
-
-	text-transform: $headingTextTransform;
-	text-shadow: $headingTextShadow;
-
-	word-wrap: break-word;
-}
-.slides{
-	background: #fff;
-}
-.slides .footer{
-        position:absolute;
-        bottom: 0;
-		height:30px;
-		text-align: center;
-		line-height:30px;
-		vertical-align: middle;
-		width: 100%;
-		background: $mainColor;
-		color: #fff;
-		font-size: 50%;
-}
-.slides .footer{
-	.left, .right{		
-		width: 50%; //change this to whatever required
-		float: left;
-	}
-}
 
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+.main .backgrounds{
+  background-color: #6200C0;
+}
+.main .footer{
+  display: none;
+}
+.reveal section ul{
+  display: table;
+}
+.main section{
+  color: #fff;
+  top: 344px !important;
+}
+.main .reveal h1, .main .reveal h2, .main .reveal h3, .main .reveal h4, .main .reveal h5, .main .reveal h6{
+  color: #fff;
+}
+.reveal{
+  color: #6200C0;
+}
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6{
+  color: #6200C0;
+}
+.reveal section img{
+  border: none;
+  box-shadow: none;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  vertical-align: middle;
+  width: 100%;
+  background: #6200C0;
+  color: #fff;}
+
+.footer .left, .footer .right {
+  width: 50%;
+  float: left; }
